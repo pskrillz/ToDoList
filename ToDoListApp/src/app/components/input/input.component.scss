@@ -1,0 +1,14 @@
+form {
+  height: 100%;
+  background: #333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+mat-form-field,
+button {
+  width: 500px;
+}
