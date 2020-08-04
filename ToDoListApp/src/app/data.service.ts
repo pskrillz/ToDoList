@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   inputItem: string;
-  toDoList = ['Change a diaper', 'Make tea', 'Take out the garbage'];
+  toDoList = [
+    'Change a diaper',
+    'Make tea',
+    'Take out the garbage',
+    'Ask Peter a quick question',
+  ];
 
   constructor() {}
 
@@ -14,5 +19,7 @@ export class DataService {
 
     console.log(this.toDoList);
   }
-  clearList() {}
+  clearList(item) {
+    this.toDoList.splice(this.toDoList.indexOf(item), 1);
+  }
 }

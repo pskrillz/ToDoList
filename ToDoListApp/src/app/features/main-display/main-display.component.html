@@ -1,7 +1,8 @@
-<mat-selection-list #todos>
-  <mat-list-option>
-    Example
+<mat-selection-list #todos *ngFor="let item of _data.toDoList; index as i">
+  <mat-list-option (click)="_data.clearList(item)">
+    {{ i + 1 }} : {{ item }}
   </mat-list-option>
 </mat-selection-list>
-<p>Tasks Completed: {{ todos.selectedOptions.selected.length }}</p>
+<!-- <button mat-raised-button>Mark Task Completed</button> -->
+<!-- <p>Tasks Completed: {{ todos.selectedOptions.selected.length }}</p> -->
 <!-- ngfor on mat list option -->
