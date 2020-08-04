@@ -7,9 +7,10 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
+import { MainDisplayComponent } from './features/main-display/main-display.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, InputComponent],
+  declarations: [AppComponent, HeaderComponent, InputComponent, MainDisplayComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
