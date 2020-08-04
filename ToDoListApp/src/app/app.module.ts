@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { MainDisplayComponent } from './features/main-display/main-display.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, InputComponent, MainDisplayComponent],
@@ -18,7 +19,7 @@ import { MainDisplayComponent } from './features/main-display/main-display.compo
     MaterialModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
