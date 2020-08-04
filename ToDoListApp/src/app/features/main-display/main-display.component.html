@@ -1,12 +1,7 @@
-
-
-
-
-
-<mat-selection-list>
-    <mat-list-option *ngFor = "let item of _data.toDoList">
-        {{ item }}
-    </mat-list-option>
-  </mat-selection-list>
-  
+<mat-selection-list #todos>
+  <mat-list-option>
+    Example
+  </mat-list-option>
+</mat-selection-list>
+<p>Tasks Completed: {{ todos.selectedOptions.selected.length }}</p>
 <!-- ngfor on mat list option -->

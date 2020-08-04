@@ -1,21 +1,18 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
-
   inputItem: string;
-  toDoList = [];
+  toDoList = ['Change a diaper', 'Make tea', 'Take out the garbage'];
 
-  constructor() { }
+  constructor() {}
 
   addToDo() {
-    this.toDoList.push(this.inputItem)
+    this.toDoList.push(this.inputItem);
 
-    console.log(this.toDoList)
+    console.log(this.toDoList);
   }
-
+  clearList() {}
 }
-
-
