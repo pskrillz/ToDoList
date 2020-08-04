@@ -1,13 +1,13 @@
-<form class="example-form">
+<div class="example-form">
   <mat-form-field class="example-full-width">
     <mat-label>Add Task</mat-label>
 
-    <input matInput placeholder="Ex. Walk the Dog" />
+    <input [(ngModel)] = "_data.inputItem" matInput placeholder="Ex. Walk the Dog" />
   </mat-form-field>
   <br />
-  <button mat-raised-button color="primary">Add To List</button>
+  <button (click) = "onClick()" mat-raised-button color="primary">Add To List</button>
   <!-- <mat-form-field class="example-full-width">
     <mat-label>Leave a comment</mat-label>
     <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
   </mat-form-field> -->
-</form>
+</div>

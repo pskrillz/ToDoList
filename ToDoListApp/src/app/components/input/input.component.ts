@@ -6,11 +6,19 @@ import { DataService } from '../../data.service';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
+
+
 export class InputComponent implements OnInit {
+
 
   constructor(public _data: DataService) { }
 
   ngOnInit(): void {
+  }
+
+  onClick(){
+    this._data.addToDo();
+    console.log(this._data.inputItem)
   }
 
 }

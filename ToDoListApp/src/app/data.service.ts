@@ -5,9 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  constructor() { }
-
   inputItem: string;
   toDoList = [];
 
+  constructor() { }
+
+  addToDo() {
+    this.toDoList.push(this.inputItem)
+
+    console.log(this.toDoList)
+  }
+
 }
+
+

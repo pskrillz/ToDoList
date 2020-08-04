@@ -4,8 +4,8 @@
 
 
 <mat-selection-list>
-    <mat-list-option>
-        Example
+    <mat-list-option *ngFor = "let item of _data.toDoList">
+        {{ item }}
     </mat-list-option>
   </mat-selection-list>
   
